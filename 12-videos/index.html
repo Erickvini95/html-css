@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colocando videos</title><!-- Formatos MPA, OGV, WEBN-->
+</head>
+<body>
+    <!--Usando o app Handbrake para converter formatos de videos com tamanhos menores-->
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/primeiro_video.mp4" height="400" controls></video><!--local do arquivo/altura/controles de player-->
+    <video height="400" poster="imagens/Corrente de prata 7mm 70cm.png" controls>
+        <source src="midia/primeiro_video.mp4" type="video/mp4"><!--Coloca varios formatos do mesmo video-->
+        <source src="midia/primeiro_video.mp4" type="video/ogv">
+    </video>
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=7FiFmmy5avpGdjqn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
